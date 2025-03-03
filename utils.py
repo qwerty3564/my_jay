@@ -2077,7 +2077,6 @@ def  train_lp_loop1(config, model, train_epoch_iterator,train_dataloader1,eval_e
         after = tqdm(total=2000, desc=f"lp after{e}")
         for step in trange:
             after.update(1)
-
             inputs = prepare_inputs(next(iterator), device)
             model_lp.eval()
             step_idx = inputs["idx"]
