@@ -2042,6 +2042,9 @@ def  train_lp_loop1(config, model, train_epoch_iterator,train_dataloader1,eval_e
                                 f"{model.metric_1.__class__.__name__}: {sum(metric_batch_test[model.metric_1.__class__.__name__]) / len(metric_batch_test[model.metric_1.__class__.__name__])}")
                         log.info(s)
 
+
+
+
     loss_gap = [[] for _ in range(len(train_dataloader1))]
     def loss_particles(model_lp,e,loss_gap):
         loss_g_before = {}
