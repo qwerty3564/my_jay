@@ -2049,8 +2049,10 @@ def  train_lp_loop1(config, model, train_epoch_iterator,train_dataloader1,eval_e
     def loss_particles(model_lp,e,loss_gap):
         loss_g_before = {}
         iterator = iter(train_dataloader1)
-        trange = range(len(train_dataloader1))
-        before = tqdm(total=len(train_dataloader1), desc=f"lp before{e}")
+        # trange = range(len(train_dataloader1))
+        trange = range(2000)
+        # before = tqdm(total=len(train_dataloader1), desc=f"lp before{e}")
+        before = tqdm(total=2000, desc=f"lp before{e}")
         for step in trange:
             before.update(1)
             inputs = prepare_inputs(next(iterator), device)
@@ -2071,7 +2073,8 @@ def  train_lp_loop1(config, model, train_epoch_iterator,train_dataloader1,eval_e
         loss_g_after = {}
         iterator = iter(train_dataloader1)
         trange = range(len(train_dataloader1))
-        after = tqdm(total=len(train_dataloader1), desc=f"lp after{e}")
+        # after = tqdm(total=len(train_dataloader1), desc=f"lp after{e}")
+        after = tqdm(total=2000, desc=f"lp after{e}")
         for step in trange:
             after.update(1)
 
