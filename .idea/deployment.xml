@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
   <component name="PublishConfigData">
-=======
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
->>>>>>> 39e5ab3 (更新了损失颗粒计算次数)
     <serverData>
       <paths name="root@connect.westc.gpuhub.com:11214 password">
         <serverdata>
