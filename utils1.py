@@ -2153,6 +2153,7 @@ def  train_lp_loop1(config, model, train_epoch_iterator,train_dataloader1,eval_e
     name1_file = f"loss_{config.dataset}_{name1}_{config.reg}_{config.seed}.csv"
     df = pd.DataFrame(train_eval[name1])
     df.to_csv(name1_file, index=False)
+
     if model.metric_1 != None:
         name2_file = f"loss_{config.dataset}_{name2}_{config.reg}_{config.seed}.csv"
         df = pd.DataFrame(train_eval[name2])
