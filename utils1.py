@@ -2090,7 +2090,7 @@ def  train_lp_loop1(config, model, train_epoch_iterator,train_dataloader1,eval_e
         loss_g_before = {}
         iterator = iter(train_dataloader1)
         # trange = range(len(train_dataloader1))
-        trange = range(1000)
+        trange = range(2000)
         before = tqdm(total=len(train_dataloader1), desc=f"lp before{e}")
         for step in trange:
             before.update(1)
@@ -2112,7 +2112,7 @@ def  train_lp_loop1(config, model, train_epoch_iterator,train_dataloader1,eval_e
         loss_g_after = {}
         iterator = iter(train_dataloader1)
         # trange = range(len(train_dataloader1))
-        trange = range(1000)
+        trange = range(2000)
         after = tqdm(total=len(train_dataloader1), desc=f"lp after{e}")
         for step in trange:
             after.update(1)
